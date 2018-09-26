@@ -8,7 +8,7 @@ RUN set -ex \
 WORKDIR /root
 
 RUN set -ex \
- && git clone -b v1.0.5 --depth 1 https://github.com/google/brotli.git \
+ && git clone -b v1.0.6 --depth 1 https://github.com/google/brotli.git \
  && mkdir -p build \
  && cd build \
  && cmake -DCMAKE_BUILD_TYPE=Release -G "Unix Makefiles" ../brotli \
